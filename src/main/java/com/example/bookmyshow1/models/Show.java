@@ -1,14 +1,16 @@
 package com.example.bookmyshow1.models;
 
-import jakarta.persistence.ElementCollection;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Date;
 import java.util.List;
 
-public class Show  {
+@Entity
+@Getter
+@Setter
+public class Show extends BaseModel  {
     private  String name;
     private Date startTime;
     private Date endTime;
